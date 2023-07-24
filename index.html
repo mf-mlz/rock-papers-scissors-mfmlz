@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/style.css" />
+    <title>Piedra Papel o Tijera</title>
+</head>
+<body>
+
+    <h1 id="tittle"> PIEDRA PAPEL O TIJERA </h1>
+    <p id="rules">Sigue las siguientes reglas del juego... <br><b>¡Y que gane el mejor!</b><p>
+
+    <ul id="list_rules">
+        <li> <b>1. Elije una opción: Piedra, Papel o Tijera </b></li>
+        <br>
+        <li> <b>2. Da clic en el botón ¡Jugar! </b></li>
+        <br>
+        <li> <b>3. ¡Que gané el mejor! </b></li>
+    </ul>
+
+
+
+    <div id="Img-Piedra-Papel-Tijera">
+
+        <div id="buttons-img">
+            
+                <img id="Piedra" src="./assets/img/Piedra.png" onclick="elegir(this)" style="">
+            
+            
+                <img id="Papel" style="margin-left: 50px;" src="./assets/img/Papel.png" onclick="elegir(this)">
+            
+            
+                <img id="Tijera" src="./assets/img/Tijera.png" onclick="elegir(this)">
+            
+                
+                <div id="result_game" style="display:none;">
+
+                    <p id="mensaje"> </p>
+                    <div style="display:flex; justify-content: center;">
+                        <b style="margin-top: 60px;color:white;"> USUARIO: </b>
+                        <img id="Retultado_img_usuario" src="./assets/img/Tijera.png">
+                       
+                    </div>
+                    <div style="display:flex; justify-content: center;">
+                        <b style="margin-top: 60px;color:white;"> CPU: </b>
+                        <img id="Retultado_img_cpu" src="./assets/img/Tijera.png">
+                </div>
+            </div>
+                <br>
+                <button id="button_play" value="" onclick="jugar(this)">¡Jugar!</button>
+                <br>
+                <button id="button_reset" value="" onclick="reset()">Volver a Jugar</button>
+    </div>
+    
+</div>
+
+<br>
+<br>
+</body>
+<script src="js/script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
